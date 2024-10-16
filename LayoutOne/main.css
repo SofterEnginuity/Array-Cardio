@@ -1,0 +1,119 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/******************************************
+  /* BASE STYLES
+  /*******************************************/
+header {
+    outline: 1px solid black;
+    height: 100px;
+    padding: 10px;
+}
+
+footer {
+    outline: 1px solid black;
+    height: 100px;
+    padding: 10px;
+}
+
+.top,
+.bottom {
+    outline: 1px solid black;
+    height: 250px;
+}
+
+/******************************************
+  /* LAYOUT
+  /*******************************************/
+.headersec1,
+.headersec2,
+.headersec3,
+.headersec4,
+.headersec5 {
+    outline: 2px solid black;
+    width: 100px;
+    height: 50px;
+    float: left;
+    margin-left: 10px;
+
+}
+
+.topleft {
+    width: 30%;
+    outline: 1px solid black;
+    height: 250px;
+    float: left;
+
+}
+
+.topright {
+    width: 70%;
+    height: 250px;
+    float: left;
+}
+
+.botleft,
+.botmimd,
+.botright {
+    outline: 1px solid black;
+    height: 250px;
+    width: 33%;
+    float: left;
+}
+
+.footersec1,
+.footersec2,
+.footersec3,
+.footersec4,
+.footersec5 {
+    outline: 2px solid black;
+    width: 100px;
+    height: 50px;
+    float: left;
+    margin-left: 10px;
+
+}
+
+/******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+@media (min-width:0em) and (max-width:766px) {
+    header, footer {
+        background-color: red;
+    }
+}
+
+
+
+
+@media (min-width:47.9385em) and (max-width:63.938em) {
+
+
+    header, footer {
+        background-color: blue;
+    }
+}
+
+
+@media (min-width:1024px) {
+
+    header,footer {
+        background-color: green;
+    }
+}
