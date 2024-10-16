@@ -41,51 +41,53 @@
 
 //Array.prototype.filter()
 
-    // console.log(inventors[0]);
-    // const year = inventors.filter(inventors =>{
-    // (person) => person.year >= 1500 && person.year <= 1599
-    // })
+    console.log(inventors[0]);
+    const year = inventors.filter(inventors =>{
+    (person) => person.year >= 1500 && person.year <= 1599
+    })
 
    
  // Array.prototype.map()
 
  // 2. Give us an array of the inventors first and last names
-    // const firstAndLastName = inventors.map( inventor => inventor.first + " " + inventor.last)
-    // console.log(firstAndLastName)
+    const firstAndLastName = inventors.map( inventor => inventor.first + " " + inventor.last)
+    console.log(firstAndLastName)
 
 // Array.prototype.sort()
 
 // 3. Sort the inventors by birthdate, oldest to youngest
-    // const ordered = inventors.sort((a,b)=> a.year > b.year ? 1: -1)
+    const ordered = inventors.sort((a,b)=> a.year > b.year ? 1: -1)
 
-    // function oldestToYoungest(){
-    //     console.log(inventors)
-    //     console.log(inventors.sort((a,b)=>a.year - b.year))
-    // }
+    function oldestToYoungest(){
+        console.log(inventors)
+        console.log(inventors.sort((a,b)=>a.year - b.year))
+    }
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
-    // const yearAllTogether = inventors.reduce((acc, curr) => acc + (curr.passed - curr.year), 0)
-    // console.log(yearsAllTogether)
+    const yearAllTogether = inventors.reduce((acc, curr) => acc + (curr.passed - curr.year), 0)
+    console.log(yearsAllTogether)
 
     // 5. Sort the inventors by years lived
-    // const yearsLived = inventors.sort((a,b)=> (a.passed - a.year)-(b.passed - b.year))
-    // console.log(yearsLived)
+    const yearsLived = inventors.sort((a,b)=> (a.passed - a.year)-(b.passed - b.year))
+    console.log(yearsLived)
 
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
-    // const de = ['banana', 'carside', 'pasta', 'bagutettde', 'grand prixde']
-    // const deFilter = de.filter(element => element.includes('de'))
+    const de = ['banana', 'carside', 'pasta', 'bagutettde', 'grand prixde']
+    const deFilter = de.filter(element => element.includes('de'))
+    
     // 7. sort Exercise
     // Sort the people alphabetically by last name
 
-//    let sorted = people.sort()
-//    console.log(sorted)
+   let sorted = people.sort()
+   console.log(sorted)
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
+
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 const instances = data.reduce((obj, item) => {
     //if the item already exists, incerement its value
